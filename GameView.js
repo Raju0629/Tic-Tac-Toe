@@ -19,6 +19,15 @@ export default class GameView {
                tile.classList.add("tile-winner");
            }
        }
+       if(winningCombination ){
+        this.announceWinner(game.turn)
+    }
+   }
+   announceWinner(turn){
+
+    alert(`Player ${turn} is the winner`)
+
+
    }
 
    updateTurn(game){
